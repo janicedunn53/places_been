@@ -1,35 +1,40 @@
 <h1>Places We've Been</h1>
+    <div class="row">
+      <div class="col-md-5">
+      <h2>Leah:</h2>
 
-<h3>Leah:</h3>
+      <ul>
+        <% @leah_places.each() do |place| %>
+          <li><%= place.name() %></li>
+        <% end %>
+      </ul>
 
-<ul>
-  <% @leah_places.each() do |place| %>
-    <li><%= place.name() %></li>
-  <% end %>
-</ul>
+      <p>Add a new place:</p>
 
-<p>Add a new place:</p>
+      <form action="/leah_places" method="post">
+        <label for="leah_name">Place name</label>
+        <input id="leah_name" name="leah_name" type="text">
 
-<form action="/leah_places" method="post">
-  <label for="leah_name">Place name</label>
-  <input id="leah_name" name="leah_name" type="text">
+        <button type="submit">Add place</button>
+      </form>
+      </div>
 
-  <button type="submit">Add place</button>
-</form>
+      <div class="col-md-5">
+      <h2>Janice:</h2>
 
-<h3>Janice:</h3>
+      <ul>
+        <% @janice_places.each() do |place| %>
+          <li><%= place.name() %></li>
+        <% end %>
+      </ul>
 
-<ul>
-  <% @janice_places.each() do |place| %>
-    <li><%= place.name() %></li>
-  <% end %>
-</ul>
+      <p>Add a new place:</p>
 
-<p>Add a new place:</p>
+      <form action="/janice_places" method="post">
+        <label for="janice_name">Place name</label>
+        <input id="janice_name" name="janice_name" type="text">
 
-<form action="/janice_places" method="post">
-  <label for="janice_name">Place name</label>
-  <input id="janice_name" name="janice_name" type="text">
-
-  <button type="submit">Add place</button>
-</form>
+        <button type="submit">Add place</button>
+      </form>
+      </div>
+    </div>

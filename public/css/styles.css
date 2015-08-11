@@ -1,0 +1,23 @@
+body {
+  background-color: #80C3C0;
+  background-image: url('img/santander.jpg');
+  background-repeat: no-repeat;
+  font-family: "Palatino Linotype";
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.col-md-5 {
+  border-style: solid;
+  border-width: 5px;
+  margin: 10px;
+  padding: 5px;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 3em;
+}
