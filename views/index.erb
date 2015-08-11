@@ -3,16 +3,33 @@
 <h3>Leah:</h3>
 
 <ul>
-  <% @places.each() do |place| %>
+  <% @leah_places.each() do |place| %>
     <li><%= place.name() %></li>
   <% end %>
 </ul>
 
 <p>Add a new place:</p>
 
-<form action="/places" method="post">
-  <label for="name">Place name</label>
-  <input id="name" name="name" type="text">
+<form action="/leah_places" method="post">
+  <label for="leah_name">Place name</label>
+  <input id="leah_name" name="leah_name" type="text">
+
+  <button type="submit">Add place</button>
+</form>
+
+<h3>Janice:</h3>
+
+<ul>
+  <% @janice_places.each() do |place| %>
+    <li><%= place.name() %></li>
+  <% end %>
+</ul>
+
+<p>Add a new place:</p>
+
+<form action="/janice_places" method="post">
+  <label for="janice_name">Place name</label>
+  <input id="janice_name" name="janice_name" type="text">
 
   <button type="submit">Add place</button>
 </form>
