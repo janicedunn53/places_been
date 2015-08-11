@@ -3,6 +3,11 @@ require("sinatra/reloader")
 also_reload("lib/**/*.rb")
 require("./lib/places")
 
+get("/reset") do
+  Place.clear()
+  redirect("/")
+end
+
 get("/") do
   @leah_places = Place.leah_all()
   @janice_places = Place.janice_all()

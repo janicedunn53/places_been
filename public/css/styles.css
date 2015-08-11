@@ -2,7 +2,7 @@ body {
   background-color: #80C3C0;
   background-image: url('img/santander.jpg');
   background-repeat: no-repeat;
-  font-family: "Palatino Linotype";
+  font-family: "Palatino Linotype" sans-serif;
   font-size: 2em;
   font-weight: bold;
 }

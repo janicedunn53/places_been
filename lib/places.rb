@@ -6,12 +6,8 @@ class Place
     @name = name
   end
 
-  define_method(:leah_name) do
-    @leah_name
-  end
-
-  define_method(:janice_name) do
-    @janice_name
+  define_method(:name) do
+    @name
   end
 
   define_singleton_method(:leah_all) do
